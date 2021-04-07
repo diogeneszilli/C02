@@ -6,7 +6,7 @@
 /*   By: dludtke- <dludtke-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 17:30:24 by dludtke-          #+#    #+#             */
-/*   Updated: 2021/04/06 17:33:48 by dludtke-         ###   ########.fr       */
+/*   Updated: 2021/04/07 16:42:11 by dludtke-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	while (i < n)
 	{
 		dest[i] = '\0';
+		i++;
 	}
 	return (dest);
 }
