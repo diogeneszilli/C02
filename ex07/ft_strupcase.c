@@ -6,7 +6,7 @@
 /*   By: dludtke- <dludtke-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 18:04:31 by dludtke-          #+#    #+#             */
-/*   Updated: 2021/04/06 18:20:05 by dludtke-         ###   ########.fr       */
+/*   Updated: 2021/04/07 16:39:24 by dludtke-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strupcase(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] >= 'a' || str[i] <= 'z')
+		if (str[i] >= 'a' && str[i] <= 'z')
 			str[i] = str[i] - 32;
 		i++;
 	}
