@@ -6,7 +6,7 @@
 /*   By: dludtke- <dludtke-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/06 18:24:40 by dludtke-          #+#    #+#             */
-/*   Updated: 2021/04/06 18:58:20 by dludtke-         ###   ########.fr       */
+/*   Updated: 2021/04/07 16:46:50 by dludtke-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@ char	*ft_strcapitalize(char *str)
 	new_word = 0;
 	while (str[i] != '\0')
 	{
-		if (!new_word && str[i] >= 'A' && str[i] <= 'Z')
+		if (!new_word && (str[i] >= 'A' && str[i] <= 'Z')
+						|| (str[i] >= '0' || str[i] <= '9'))
 			new_word++;
 		else if (!new_word && str[i] >= 'a' && str[i] <= 'z')
 		{
